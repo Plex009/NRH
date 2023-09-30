@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <link rel="shortcut icon" href="img/Raskrasil.com-Coloring-Pages-Nike-101-removebg-preview (1).png">
+	<title>NRH</title>
+	<link rel="stylesheet" href="style.css">
+  <script src="scrip.js"></script>
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+</head>
+<body>
+<div id="gris"></div>
+<div class="wrapper" id="wrapper">
+    <div class="sidebar" id="sidebar">
+      <div class="cerrar">
+        <button type="button" onclick="button()">X</button>
+      </div>
+      <a  href="#"><img src="img/logo nrh3.png"></a>
+        <ul>
+            <li><a href="#"><i class="fas fa-home"></i>Inicio</a></li>
+            <li><a href="#"><i class="fas fa-address-card"></i>Nosotros</a></li>
+            <li><a href="#"><i class="fas fa-address-book"></i>Contacto</a></li>
+            <li><a href="#"><i class="fas fa-user"></i>Iniciar Sesion / Registro</a></li>
+        </ul> 
+      <div class="social_media">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+</div>
+<div class="container">
+  <div class="media_button" onclick="button()">
+    <button class="main_media_button" id="button">
+        <span style="height: 2px;"></span>
+        <span style="height: 2px;"></span>
+        <span style="height: 2px;"></span>
+    </button>
+  </div>
+  <a class="titulo" href="#"><h2>NRH</h2></a>
+  <div class="icon_cart">
+    <div class="cart">
+      <a onclick="openLogin()" ><svg style="width: 22px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z"/></svg></a>
+      <a id="cart-icon" onclick="toggleCart()" ><svg style="width: 28px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg></a>
+    </div>
+    <div id="main-content">
+      <!-- Contenido principal de la página -->
+    </div>
+  </div>
+</div>
+<div id="sidebar_cars" class="carr">
+  <div class="carrito">
+    <h2>Productos</h2>
+  <div id="close-button" onclick="toggleCart()">X</div>
+  </div>
+  <ul id="product-list">
+    <li>Producto 1</li>
+    <li>Producto 2</li>
+    <li>Producto 3</li>
+  </ul>
+</div>
+<div id="loginModal" class="modal">
+  <div class="modal-content">
+    <div class="loginUP">
+      <h1>INICIAR SESION</h1>
+      <span class="close" onclick="closeLogin()">&times;</span>
+    </div>
+    <form>
+      <label class="label" for="username">Email *</label>
+      <input class="input" type="email" id="username">
+      <label class="label1" for="password">Contraseña *</label>
+      <input class="input" type="password" id="password">
+      <button class="boton_iniciar" type="submit">Iniciar sesión</button>
+      <label class="label2" for="password">¿Olvidaste tu contraseña?</label>
+      <label class="label2" for="registrar">¿Aun no tienes una cuenta?<a id="registroBtn">Registrate</a></label>
+    </form>
+  </div>
+  </div>
+  <div id="registroModal" class="modal1">
+    <div class="modal-content1">
+      <span class="close1">&times;</span>
+      <h2>Registro</h2>
+      <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email">
+        <br>
+        <button type="submit">Registrarse</button>
+      </form>
+    </div>
+  </div>
+  
+
+<div class="container_conte">
+  <div class="container_conte2">
+    <a href="#">Inicio</a>
+    <a href="#">Nosotros</a>
+    <a href="#">Contacto</a>
+    <a href="#">Hombre</a>
+    <a href="#">Mujer</a>
+    <div class="search-container">
+      <input type="text" id="campo-busqueda" class="search-input" placeholder="Buscar">
+      <button onclick="buscar()" class="search-button">Buscar</button>
+    </div>
+  </div>
+</div>
+<div class="portada">
+  <img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/001/932/403/products/air-jordan-4-retro-black-cat-2020-3-10001-a877a963ebb59e259116490399558389-640-0.png" alt="">
+</div>
+<div class="con_portada">
+  <div class="img_portada">
+    <img src="https://media.revistagq.com/photos/61efc2edfed8925d535f22a7/master/w_1000,h_600,c_limit/air-jordan-1-mid-chicago.png" alt="">
+  </div>
+  <div>
+    <img src="https://artificiovirtual.com/527-large_default/zapatillas-baletas-chicharronas-doradas.jpg" alt="">
+  </div>
+</div>
+<div class="container_card">
+  <div class="cards">
+    <img src="https://cdn.shopify.com/s/files/1/0255/9429/8467/products/Air_Jordan_4_Retro_Military_Black_540x.png?v=1652261747" alt="">
+    <p>Air Jordan Trainers</p>
+    <p>$ 180.000</p>
+    <button type="button">Compra ahora</button>
+  </div>
+  <div class="cards">
+    <img src="https://static.nike.com/a/images/t_default/f925ff6a-562e-4d11-a3b9-846257ae7f71/dunk-low-zapatillas-Rxrj0X.png" alt="">
+    <p>Air Jordan Trainers</p>
+    <p>$ 180.000</p>
+    <button type="button">Compra ahora</button>
+  </div>
+  <div class="cards">
+    <img src="https://artificiovirtual.com/525-large_default/zapatillas-baletas-chicharronas-rojas.jpg" alt="">
+    <p>Air Jordan Trainers</p>
+    <p>$ 180.000</p>
+    <button type="button">Compra ahora</button>
+  </div>
+  <div class="cards">
+    <img src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1695291707-terminator-high-zapatillas-6xP8qN.png?crop=1xw:1xh;center,top&resize=980:*" alt="">
+    <p>Air Jordan Trainers</p>
+    <p>$ 180.000</p>
+    <button type="button">Compra ahora</button>
+  </div>
+  <div class="cards">
+    <img src="https://static.nike.com/a/images/t_default/0f99a054-cb0c-4430-aa34-37ae09713c5e/calzado-grandes-dunk-low-pfrWfJ.png" alt="" height="">
+    <p>Air Jordan Trainers</p>
+    <p>$ 180.000</p>
+    <button type="button">Compra ahora</button>
+  </div>
+  <div class="cards">
+    <img src="https://cdn.shopify.com/s/files/1/0255/9429/8467/products/Air_Jordan_4_Retro_Military_Black_540x.png?v=1652261747" alt="">
+    <p>Air Jordan Trainers</p>
+    <p>$ 180.000</p>
+    <button type="button">Compra ahora</button>
+  </div>
+  <div class="cards">
+    <img src="https://cdn.shopify.com/s/files/1/0255/9429/8467/products/Air_Jordan_4_Retro_Military_Black_540x.png?v=1652261747" alt="">
+    <p>Air Jordan Trainers</p>
+    <p>$ 180.000</p>
+    <button type="button">Compra ahora</button>
+  </div>
+  <div class="cards">
+    <img src="https://artificiovirtual.com/531-home_default/zapatillas-baletas-chicharronas-negras.jpg" alt="">
+    <p>Air Jordan Trainers</p>
+    <p>$ 180.000</p>
+    <button type="button">Compra ahora</button>
+  </div>
+  <div class="cards">
+    <img src="https://p1-api.wowconcept.com/cdn-cgi/image/format=auto,fit=scale-down/https://p1-api.wowconcept.com/medias/515Wx515H-LAC2SNE33734PCM006-picture.png?context=bWFzdGVyfHJvb3R8NjYzNTF8aW1hZ2UvcG5nfGFHSXlMMmd5T0M4NU1USXhOVEl5TWpVek9EVTBMelV4TlZkNE5URTFTRjlNUVVNeVUwNUZNek0zTXpSUVEwMHdNRFpmY0dsamRIVnlaUzV3Ym1jfDAzNTExMDkwODE2MDU5MGFjYThmZTAyMTMxN2ZlZDgzNTIwM2ExYWRmZGU1ZmFjZmU3MTY5NDFkOGU3Y2E0NDU" alt="">
+    <p>Air Jordan Trainers</p>
+    <p>$ 180.000</p>
+    <button type="button">Compra ahora</button>
+  </div>
+  <div class="cards">
+    <img src="https://cdn.shopify.com/s/files/1/0255/9429/8467/products/Air_Jordan_4_Retro_Military_Black_540x.png?v=1652261747" alt="">
+    <p>Air Jordan Trainers</p>
+    <p>$ 180.000</p>
+    <button type="button">Compra ahora</button>
+  </div>
+  <div class="cards">
+    <img src="https://cdn.shopify.com/s/files/1/0255/9429/8467/products/Air_Jordan_4_Retro_Military_Black_540x.png?v=1652261747" alt="">
+    <p>Air Jordan Trainers</p>
+    <p>$ 180.000</p>
+    <button type="button">Compra ahora</button>
+  </div>
+  <div class="cards">
+    <img src="https://cdn.shopify.com/s/files/1/0255/9429/8467/products/Air_Jordan_4_Retro_Military_Black_540x.png?v=1652261747" alt="">
+    <p>Air Jordan Trainers</p>
+    <p>$ 180.000</p>
+    <button type="button">Compra ahora</button>
+  </div>
+  <div class="cards">
+    <img src="https://artificiovirtual.com/529-large_default/zapatillas-baletas-chicharronas-azul-rey.jpg" alt="">
+    <p>Air Jordan Trainers</p>
+    <p>$ 180.000</p>
+    <button type="button">Compra ahora</button>
+  </div>
+  <div class="cards">
+    <img src="https://cdn.shopify.com/s/files/1/0255/9429/8467/products/Air_Jordan_4_Retro_Military_Black_540x.png?v=1652261747" alt="">
+    <p>Air Jordan Trainers</p>
+    <p>$ 180.000</p>
+    <button type="button">Compra ahora</button>
+  </div>
+  <div class="cards">
+    <img src="https://cdn.shopify.com/s/files/1/0255/9429/8467/products/Air_Jordan_4_Retro_Military_Black_540x.png?v=1652261747" alt="">
+    <p>Air Jordan Trainers</p>
+    <p>$ 180.000</p>
+    <button type="button">Compra ahora</button>
+  </div>
+  <div class="cards">
+    <img src="https://artificiovirtual.com/523-large_default/zapatillas-baletas-chicharronas-fucsia.jpg" alt="">
+    <p>Air Jordan Trainers</p>
+    <p>$ 180.000</p>
+    <button type="button">Compra ahora</button>
+  </div>
+</div>
+<footer>
+  <div class="social-media">
+    <p class="redes">Síguenos en redes sociales:</p>
+    <br>
+    <a href="https://www.facebook.com/tu_tienda" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.instagram.com/tu_tienda" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.tiktok.com/@tu_tienda" target="_blank"><i class="fab fa-tiktok"></i></a>
+  </div>
+<br>
+  <div class="contact-info">
+    Servicio al cliente:
+    Teléfono: <a href="tel:+123456789">123456789</a>
+    Correo electrónico: <a href="mailto:info@tu_tienda.com">nrh_store.com</a>
+  </div>
+
+  <div class="store-address">
+    Calle, número - Ciudad, código postal - País
+  </div>
+
+  <div class="copyright">
+    © <span id="current-year"></span> <span class="store-name">NHR store</span>. Todos los derechos reservados.
+  </div>
+</footer>
+
+<script>
+  // JavaScript para obtener el año actual
+  document.getElementById("current-year").textContent = new Date().getFullYear();
+</script>
+
+<script src="js/java.js"></script>
+</body>
+
+
+</html>
